@@ -10,11 +10,11 @@
     <tbody>
       <tr>
         <th scope="row">Product</th>
-        <td><%= @product_count %></td>
+        <td><%= link_to @product_count, [:admin, :products], class: "link-secondary" %></td>
       </tr>
       <tr>
         <th scope="row">Category</th>
-        <td><%= @category_count %></td>
+        <td><%= link_to @category_count, [:admin, :products], class: "link-secondary" %></td>
       </tr>
     </tbody>
   </table>
