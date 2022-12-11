@@ -1,0 +1,21 @@
+.about-index {
+  margin-bottom: 3em;
+  .page-header {
+    margin: 2em 0em 1em 0em;
+  }
+  .about-content {
+    border-radius: 0.25em;
+    border: 0.1em solid rgba(0, 130, 29, 0.8);
+    padding: 1em 3em 2em 1em;
+  }
+}
+
+// .dashboard-table {
+//   margin: 5%;
+//   .dashboard-title {
+//     margin: 0.5em 0em 0.5em 0em;
+//   }
+//   .table > :not(caption) > * > * {
+//     padding: 0.5em 1em;
+//   }
+// }

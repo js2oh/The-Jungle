@@ -63,6 +63,11 @@
           <%= link_to cart_path, class: "nav-link " do %> <%= fa_icon "shopping-cart" %>
           My Cart (<%= cart.size %>) <% end %>
         </li>
+        <li class="nav-item">
+          <%= link_to [:about, :index], class: 'nav-link' do %>
+            About <%= fa_icon "info-circle" %>
+          <% end %>
+        </li>
       </ul>
     </div>
   </div>
@@ -83,6 +88,6 @@ const gnr = () => {
   };
   const title = document.querySelector("header.hero");
   title.addEventListener("dblclick", gnr);
-  
+
 })()
   </script>
