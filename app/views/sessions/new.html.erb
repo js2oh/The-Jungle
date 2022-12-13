@@ -1,0 +1,26 @@
+<section class="login-new">
+
+  <header class="page-header">
+    <h1>Login</h1>
+  </header>
+
+  <div class="signin-form-container">
+    <%= form_tag '/login' do %>
+      <div class='input-field-container'>
+        <div class="form-group">
+          <%= label_tag "Email: " %>
+          <%= text_field_tag :email %>
+        </div>
+        <div class="form-group">
+          <%= label_tag "Password: " %>
+          <%= password_field_tag :password %>
+        </div>
+        <div class="form-btn">
+          <%= submit_tag "Sign In", class: 'btn btn-lg btn-primary' %>
+          <%= link_to "Sign Up", "/signup", class: 'btn btn-lg btn-primary' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</section>
