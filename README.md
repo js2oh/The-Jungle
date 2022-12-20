@@ -29,3 +29,9 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+
+## Commands
+- bin/rails s -b 0.0.0.0
+- bin/rails s -e test -b 0.0.0.0
+- bin/rspec
+- bin/rails cypress:open
