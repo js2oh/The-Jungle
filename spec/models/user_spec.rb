@@ -145,13 +145,13 @@ RSpec.describe User, type: :model do
   describe '.authenticate_with_credentials' do
 
     correct_credentials = {
-      :email => "js2oh@uwaterloo.ca",
-      :password => "a1s2d3f4g5",
+      email: "js2oh@uwaterloo.ca",
+      password: "a1s2d3f4g5",
     }
 
     wrong_credentials = {
-      :email => "js@uwaterloo.ca",
-      :password => "a1s2d3f4",
+      email: "js@uwaterloo.ca",
+      password: "a1s2d3f4",
     }
 
     EMAIL_WITH_WHITESPACES = "  js2oh@uwaterloo.ca   "
