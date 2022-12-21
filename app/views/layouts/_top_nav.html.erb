@@ -67,7 +67,7 @@
         </li>
 
         <% unless [signup_path, login_path].inject(false) { |bool, path| bool || current_page?(path) } %>
-          <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"
             href="#"
@@ -81,7 +81,7 @@
           <ul class="dropdown-menu dropdown-menu-dark">
             <% if current_user %>
               <li>
-                <%= link_to cart_path, class: "nav-link " do %>
+                <%= link_to cart_path, class: "nav-link" do %>
                   &nbsp; <%= fa_icon "shopping-cart" %>&nbsp; My Cart (<%= cart.size %>)
                 <% end %>
               </li>
@@ -91,6 +91,11 @@
                 <% end %>
               </li>
             <% else %>
+              <li>
+                <%= link_to cart_path, class: "nav-link " do %>
+                  &nbsp; <%= fa_icon "shopping-cart" %>&nbsp; My Cart (<%= cart.size %>)
+                <% end %>
+              </li>
               <li>
                 <%= link_to '/login', class: 'nav-link' do %>
                   &nbsp; <%= fa_icon "sign-in" %> &nbsp; Sign In
