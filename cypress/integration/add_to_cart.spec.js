@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('example to-do app', () => {
+describe('Add to Cart', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/products')
   });

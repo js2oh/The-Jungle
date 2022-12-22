@@ -1,5 +1,10 @@
                                   Prefix Verb   URI Pattern                                                                                       Controller#Action
                                     root GET    /                                                                                                 products#index
+                                  signup GET    /signup(.:format)                                                                                 users#new
+                                   users POST   /users(.:format)                                                                                  users#create
+                                   login GET    /login(.:format)                                                                                  sessions#new
+                                         POST   /login(.:format)                                                                                  sessions#create
+                                  logout GET    /logout(.:format)                                                                                 sessions#destroy
                                 products GET    /products(.:format)                                                                               products#index
                                  product GET    /products/:id(.:format)                                                                           products#show
                                 category GET    /categories/:id(.:format)                                                                         categories#show
