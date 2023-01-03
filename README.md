@@ -34,4 +34,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - bin/rails s -b 0.0.0.0
 - bin/rails s -e test -b 0.0.0.0
 - bin/rspec
+- bin/rails routes > routes.txt
 - bin/rails cypress:open
+- bin/rails console
+- bin/rails db:migrate
+- bin/rails db:reset
+- bin/rails generate model [name] [fields]
+- bin/rails generate rspec:model
+- bin/rails generate ...

@@ -5,6 +5,7 @@
                                    login GET    /login(.:format)                                                                                  sessions#new
                                          POST   /login(.:format)                                                                                  sessions#create
                                   logout GET    /logout(.:format)                                                                                 sessions#destroy
+                         product_reviews POST   /products/:product_id/reviews(.:format)                                                           reviews#create
                                 products GET    /products(.:format)                                                                               products#index
                                  product GET    /products/:id(.:format)                                                                           products#show
                                 category GET    /categories/:id(.:format)                                                                         categories#show
